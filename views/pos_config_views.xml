@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_pos_config_form_qty_lock" model="ir.ui.view">
+        <field name="name">pos.config.form.qty_lock</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <!--
+                Section dediee dans la form pos.config. On cible le 1er bloc
+                <sheet> et on ajoute en bas (position=inside) pour eviter
+                toute collision xpath avec d'autres modules.
+            -->
+            <xpath expr="//sheet" position="inside">
+                <group string="Controle quantites SOPROMER" name="sopromer_qty_lock">
+                    <field name="sopromer_qty_lock_mode"/>
+                    <field name="sopromer_qty_lock_check_stock"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
