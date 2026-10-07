@@ -3,7 +3,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 {
     'name': 'SOPROMER POS Quantity Lock',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
     'category': 'Point of Sale',
     'summary': 'Block invalid POS quantities (negative, zero, overstock) with manager override',
     'description': """
